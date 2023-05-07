@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgb(67, 63, 63);
+    color: white;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('abstract-futuristic-technology-with-polygonal-shapes-dark-blue-background-connection-technologies-backdrop-internet-communication.jpg');
+    background-size:cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 5%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 300px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 3px solid indianred;
+    transition: 0.4s linear;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.header-text h3{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.header-text h3 span{
+    color: rgb(235, 122, 65);
+}
+
+/*----------------------    About Me    ------------------------*/
+
+#about{
+    padding: 50px 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-1{
+    flex-basis: 60%;
+}
+.col-1 img{
+    height: 500px;
+    width: 650px;
+    border-radius: 15px;
+}
+
+.col-2{
+    flex-basis: 35%;
+}
+
+.heading{
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+}
+
+.btn{
+    display: inline;
+    text-decoration: none;
+    margin: top 2px;;
+    padding: 10px 20px;
+    font-size: 15px;
+    background: indianred;
+    color: white;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    background: white;
+    color: black;
+}
+
+/*----------------------------skill--------------------------------*/
+
+#skills{
+    padding: 50px 10px;
+}
+
+.header_skill{
+    margin-top: 5%;
+    font-size: 40px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    
+  }
+th {
+    text-align: center;
+    padding: 16px;
+    font-size: 35px;
+    color: rgb(203, 155, 141);
+  } 
+td {
+    text-align: center;
+    padding: 16px;
+    font-size: 20px;
+  }
+
+/*---------------------project-----------------*/
+#project{
+    padding: 50px 30px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.project-1{
+    float: left;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-list::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.project-1 img{
+    height: 450px;
+    width: 500px;
+    border-radius: 10px;
+    display: block;
+    margin-top: 10%;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 96%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2),grey);
+    padding:  0 50px;
+    border-radius: 10px;
+    position: absolute;
+    left: o;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.project-1:hover img{
+    transform: scale(1.1);
+}
+
+.project-1:hover .layer{
+    height: 94%;
+}
+
+/*-------------------         contact         --------------------*/
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left h1{
+    font-size: 60px;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: indianred;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: skyblue;
+    display: inline-block;
+    transition: transform 0.5s\;
+}
+
+.social-icons a:hover{
+    color: white;
+    transform: translateY(-5px);
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #3f3535;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.created{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: gray;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+#msg{
+    color: white;
+    margin-top: 15px;
+    display: block;
+}
